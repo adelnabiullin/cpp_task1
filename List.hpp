@@ -114,7 +114,7 @@ T List<T>::shift() {
 	T result = nullptr;
 	if (head) {
 		Node<T> *tmp = head;
-		result = head.data;
+		result = head->data;
 		head = head->next;
 		delete tmp;
 		if (!head) {
